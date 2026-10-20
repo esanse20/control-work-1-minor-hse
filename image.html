@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Изображение магазина Steam</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            max-width: none;
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        main {
+            text-align: center;
+        }
+
+        .large-image {
+            width: 600px;
+            height: 400px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <figure>
+            <img class="large-image"
+                 src="images/steam.png"
+                 alt="Главная страница магазина Steam"
+                 width="600" height="400">
+            <figcaption>Магазин Steam</figcaption>
+        </figure>
+        <p><a href="games.html">Перейти к подборке игр</a></p>
+    </main>
+</body>
+</html>
