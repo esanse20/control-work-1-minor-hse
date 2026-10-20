@@ -73,3 +73,45 @@ figcaption {
 .comparison figure {
     margin: 0;
 }
+.passport {
+    max-width: 650px;
+    margin: 24px auto;
+    color: #342626;
+    background-color: #f2dfd5;
+    border: 2px solid #96756b;
+    border-radius: 12px;
+}
+
+.passport-page {
+    padding: 24px;
+}
+
+.passport-page + .passport-page {
+    border-top: 2px dashed #96756b;
+}
+
+.passport-page h2 {
+    color: #773737;
+    text-align: center;
+}
+
+.passport-page span {
+    font-weight: bold;
+}
+
+.passport-photo {
+    float: left;
+    width: 110px;
+    height: 150px;
+    margin: 0 24px 12px 0;
+    border: 1px solid #96756b;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.passport-page small {
+    display: block;
+    clear: both;
+    text-align: right;
+}
