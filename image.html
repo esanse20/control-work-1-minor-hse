@@ -5,49 +5,41 @@
     <title>Изображение магазина Steam</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        html { height: 100%; }
         body {
+            min-height: 100%;
+            max-width: none;
             margin: 0;
             padding: 0;
-            max-width: none;
-            min-height: 100vh;
-            display: grid;
-            place-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-
         main {
+            max-width: 900px;
             text-align: center;
-        }
-
-        .large-image {
-            width: 600px;
-            height: 400px;
-            object-fit: contain;
         }
     </style>
 </head>
 <body>
     <main>
-        <nav>
-    <a href="index.html">
-        <img src="images/steam.png" alt="На главную" width="60">
-    </a>
-    <a href="index.html">Главная</a> |
-    <a href="genres.html">Жанры</a> |
-    <a href="games.html">Игры</a> |
-    <a href="guide.html">Советы</a> |
-    <a href="forms.html">Формы</a>
-    | <a href="passport.html">Паспорт</a>
-    | <a href="translit.html">Латиница</a>
-    <a href="genres.html#choice">Выбор жанра</a> |
-    <a href="https://store.steampowered.com/"
-       target="_blank" rel="noopener noreferrer">Steam ↗</a>
-    <br>
-    <strong aria-current="page">Просмотр изображения</strong>
-    | <a href="task.html">Задача №1013</a>
-</nav>
+    <nav>
+        <a href="index.html"><img src="images/steam.png" alt="На главную" width="60"></a>
+        <a href="index.html">Главная</a>
+        <a href="genres.html">Жанры</a>
+        <a href="games.html">Игры</a>
+        <a href="guide.html">Советы</a>
+        <a href="forms.html">Формы</a>
+        <a href="passport.html">Паспорт</a>
+        <a href="translit.html">Латиница</a>
+        <a href="task.html">Задача №1013</a>
+        <a href="genres.html#choice">Выбор жанра</a>
+        <a href="https://store.steampowered.com/" target="_blank" rel="noopener noreferrer">Steam</a>
+        <strong class="active">Просмотр изображения</strong>
+    </nav>
         <figure>
-            <img class="large-image"
-                 src="images/steam.png"
+            <img
+                 src="images/steam-large.jpg"
                  alt="Главная страница магазина Steam"
                  width="600" height="400">
             <figcaption>Магазин Steam</figcaption>

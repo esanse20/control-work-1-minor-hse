@@ -1,117 +1,45 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #1b2838;
-    color: #e5e5e5;
     max-width: 900px;
-    margin: 0 auto;
-    padding: 24px;
-    line-height: 1.6;
-}
-
-h1, h2 {
-    color: #ffffff;
-}
-
-a {
-    color: #66c0f4;
-}
-
-a:hover {
-    color: #ffffff;
-}
-
-nav {
-    background-color: #171a21;
+    margin: 20px auto;
     padding: 16px;
-    margin-bottom: 24px;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fafafa;
 }
-
+nav {
+    padding: 12px;
+    background-color: #e8edf2;
+}
 nav a {
-    margin-right: 12px;
+    margin-right: 10px;
 }
-
-nav a[aria-current="page"] {
-    color: #ffffff;
-    text-decoration: underline;
+a {
+    color: #174b80;
 }
-
+a:hover, .active {
+    color: #000;
+    font-weight: bold;
+}
 img {
     max-width: 100%;
-    height: auto;
-}
-
-figure {
-    margin: 24px 0;
-}
-
-figcaption {
-    color: #b8b6b4;
 }
 .comparison {
     width: 100%;
-    border-collapse: collapse;
-    background-color: #171a21;
-    background-image:
-        linear-gradient(rgba(23, 26, 33, 0.8), rgba(23, 26, 33, 0.8)),
-        url("images/steam.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("images/steam.png");
 }
-
-.comparison th,
-.comparison td {
-    border: 1px solid #66c0f4;
-    padding: 12px;
+.comparison th, .comparison td {
+    border: 1px solid #888;
+    padding: 10px;
     text-align: left;
-}
-
-.comparison caption {
-    padding: 12px;
-    font-weight: bold;
-}
-
-.comparison figure {
-    margin: 0;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 .passport {
     max-width: 650px;
-    margin: 24px auto;
-    color: #342626;
-    background-color: #f2dfd5;
-    border: 2px solid #96756b;
-    border-radius: 12px;
+    margin: auto;
 }
-
 .passport-page {
-    padding: 24px;
-}
-
-.passport-page + .passport-page {
-    border-top: 2px dashed #96756b;
-}
-
-.passport-page h2 {
-    color: #773737;
-    text-align: center;
-}
-
-.passport-page span {
-    font-weight: bold;
-}
-
-.passport-photo {
-    float: left;
-    width: 110px;
-    height: 150px;
-    margin: 0 24px 12px 0;
-    border: 1px solid #96756b;
-    display: grid;
-    place-items: center;
-    text-align: center;
-}
-
-.passport-page small {
-    display: block;
-    clear: both;
-    text-align: right;
+    border: 1px solid #aaa;
+    margin: 16px 0;
+    padding: 16px;
 }
