@@ -1,45 +1,9 @@
-body {
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: 20px auto;
-    padding: 16px;
-    line-height: 1.5;
-    color: #222;
-    background-color: #fafafa;
-}
-nav {
-    padding: 12px;
-    background-color: #e8edf2;
-}
-nav a {
-    margin-right: 10px;
-}
-a {
-    color: #174b80;
-}
-a:hover, .active {
-    color: #000;
+.active {
     font-weight: bold;
 }
-img {
-    max-width: 100%;
-}
 .comparison {
-    width: 100%;
     background-image: url("images/steam.png");
 }
 .comparison th, .comparison td {
-    border: 1px solid #888;
-    padding: 10px;
-    text-align: left;
     background-color: rgba(255, 255, 255, 0.9);
-}
-.passport {
-    max-width: 650px;
-    margin: auto;
-}
-.passport-page {
-    border: 1px solid #aaa;
-    margin: 16px 0;
-    padding: 16px;
 }
