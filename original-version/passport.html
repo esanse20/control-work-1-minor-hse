@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_JS. Считываем информацию из DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="images/steam.png" alt="На главную" width="60">
+        </a>
+        <a href="index.html">Главная</a> |
+        <a href="genres.html">Жанры</a> |
+        <a href="games.html">Игры</a> |
+        <a href="guide.html">Советы</a> |
+        <a href="forms.html">Формы</a> |
+        <a href="passport.html" aria-current="page">
+            <strong>Паспорт</strong>
+        </a> |
+        <a href="translit.html">Латиница</a> |
+        <a href="genres.html#choice">Выбор жанра</a> |
+        <a href="https://store.steampowered.com/"
+           target="_blank" rel="noopener noreferrer">Steam ↗</a>
+           | <a href="task.html">Задача №1013</a>
+    </nav>
+
+    <h1>DOM_JS. Считываем информацию из DOM</h1>
+    <p>Учебный макет. Данные о выдаче и номер вымышлены.</p>
+
+    <div class="passport">
+        <section class="passport-page">
+            <h2>Российская Федерация</h2>
+
+            <p>Паспорт выдан: УЧЕБНЫМ ОТДЕЛЕНИЕМ ГОРОДА МОСКВЫ</p>
+            <p>Дата выдачи: 01.09.2024</p>
+            <p>Код подразделения: 000-000</p>
+            <p>Серия и номер: 0000 000000</p>
+            <p>Подпись владельца: ____________</p>
+
+            <small>Страница 2</small>
+        </section>
+
+        <section class="passport-page">
+            <h2>Сведения о владельце</h2>
+
+            <div class="passport-photo">Место для фото</div>
+
+            <p>Фамилия: <span id="last-name">ШАХОВА</span></p>
+            <p>Имя: <span id="first-name">АНДРЕЙ</span></p>
+            <p>Отчество: ИВАНОВИЧ</p>
+            <p>Пол: МУЖ.</p>
+            <p>Дата рождения: 01.01.<span id="birth-year">2007</span></p>
+            <p>Место рождения: ГОРОД МОСКВА</p>
+
+            <small>Страница 3</small>
+        </section>
+    </div>
+
+    <h2>Получение данных из DOM</h2>
+    <figure>
+    <img src="images/passport-dom.png"
+         alt="Чтение фамилии, имени и года рождения из DOM"
+         width="900">
+    <figcaption>
+        Получение данных из HTML-элементов через консоль браузера.
+    </figcaption>
+</figure>
+</body>
+</html>

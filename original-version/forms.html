@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Формы — Компьютерные игры в Steam</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">
+            <img src="images/steam.png" alt="На главную" width="60">
+        </a>
+        <a href="index.html">Главная</a> |
+        <a href="genres.html">Жанры</a> |
+        <a href="games.html">Игры</a> |
+        <a href="guide.html">Советы</a> |
+        <a href="forms.html" aria-current="page"><strong>Формы</strong></a> |
+        | <a href="passport.html">Паспорт</a>
+        | <a href="translit.html">Латиница</a>
+        <a href="genres.html#choice">Выбор жанра</a> |
+        <a href="https://store.steampowered.com/"
+           target="_blank" rel="noopener noreferrer">Steam ↗</a>
+           | <a href="task.html">Задача №1013</a>
+    </nav>
+
+    <h1>Формы</h1>
+    <h2>Контактная форма</h2>
+    <p>Для проверки отправки используй вымышленные данные.</p>
+
+    <form action="https://httpbin.org/post"
+          method="post" target="_blank">
+        <p>
+            <label for="last-name">Фамилия:</label>
+            <input id="last-name" type="text"
+                   name="last_name" value="Иванов" required>
+        </p>
+
+        <p>
+            <label for="first-name">Имя:</label>
+            <input id="first-name" type="text"
+                   name="first_name" value="Иван" required>
+        </p>
+
+        <p>
+            <label for="group">Группа:</label>
+            <input id="group" type="text"
+                   name="group" value="Учебная группа" required>
+        </p>
+
+        <p>
+            <label for="phone">Мобильный телефон:</label>
+            <input id="phone" type="tel"
+                   name="phone" value="+70000000000" required>
+        </p>
+
+        <p>
+            <label for="email">Электронная почта:</label>
+            <input id="email" type="email"
+                   name="email" value="student@example.com" required>
+        </p>
+
+        <p>
+            <label for="sent-date">Дата отправки:</label>
+            <input id="sent-date" type="date"
+                   name="sent_date" value="2026-10-20" required>
+        </p>
+
+        <button type="submit">Отправить контакты</button>
+        <button type="reset">Вернуть исходные значения</button>
+    </form>
+        <h2>Анкета игрока</h2>
+    <p>Используй вымышленный код участника, а не пароль Steam.</p>
+
+    <form action="https://httpbin.org/post"
+          method="post" target="_blank">
+
+        <input type="hidden" name="form_type" value="player_survey">
+
+        <p>
+            <label for="nickname">Игровой ник:</label>
+            <input id="nickname" type="text"
+                   name="nickname" value="Player1013" required>
+        </p>
+
+        <p>
+            <label for="hours">Сколько часов в неделю играешь:</label>
+            <input id="hours" type="number"
+                   name="hours_per_week" value="5"
+                   min="0" max="168" step="1" required>
+        </p>
+
+        <fieldset>
+            <legend>Предпочитаемый режим</legend>
+            <label>
+                <input type="radio" name="game_mode"
+                       value="singleplayer" checked>
+                Одиночный
+            </label>
+            <label>
+                <input type="radio" name="game_mode"
+                       value="multiplayer">
+                Многопользовательский
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Любимые жанры</legend>
+            <label>
+                <input type="checkbox" name="favorite_genres"
+                       value="puzzle" checked>
+                Головоломки
+            </label>
+            <label>
+                <input type="checkbox" name="favorite_genres"
+                       value="strategy">
+                Стратегии
+            </label>
+            <label>
+                <input type="checkbox" name="favorite_genres"
+                       value="simulation">
+                Симуляторы
+            </label>
+        </fieldset>
+
+        <p>
+            <label for="play-date">Дата следующей игры:</label>
+            <input id="play-date" type="date"
+                   name="next_play_date" value="2026-10-21" required>
+        </p>
+
+        <p>
+            <label for="participant-code">Учебный код участника:</label>
+            <input id="participant-code" type="password"
+                   name="participant_code" value="demo1013" required>
+        </p>
+
+        <button type="submit">Отправить анкету</button>
+        <button type="reset">Вернуть исходные значения</button>
+    </form>
+</body>
+</html>
